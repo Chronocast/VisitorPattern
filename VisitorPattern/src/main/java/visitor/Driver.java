@@ -4,7 +4,7 @@ import car.*;
 
 public class Driver implements CarVisitor
 {
-    private String name = "Driver";
+    private String name = "DRIVER";
 
     @Override
     public void visit(SteeringWheel steeringWheel)
@@ -19,7 +19,7 @@ public class Driver implements CarVisitor
 
     @Override
     public void visit(Hood hood) {
-
+        System.out.println(name + " takes a selfie on the hood");
     }
 
     @Override

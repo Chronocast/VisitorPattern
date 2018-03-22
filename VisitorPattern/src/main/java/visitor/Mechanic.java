@@ -3,7 +3,7 @@ package visitor;
 import car.*;
 
 public class Mechanic implements CarVisitor {
-   private String name = "Mechanic";
+   private String name = "MECHANIC";
 
     @Override
     public void visit(SteeringWheel steeringWheel) {
