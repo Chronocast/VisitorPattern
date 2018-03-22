@@ -2,13 +2,14 @@ package car;
 
 import visitor.ICarVisitor;
 
-public class Car implements car.ICarPart {
-    car.ICarPart[] carElement;
+public class Car implements ICarParts
+{
+    ICarParts[] carElement;
 
 
     //create car object array with all parts
     public Car(){
-        this.carElement = new car.ICarPart[]{new Door(), new Hood(), new Engine(), new SteeringWheel()};
+        this.carElement = new ICarParts[]{new Door(), new Hood(), new Engine(), new SteeringWheel()};
     }
 
 
@@ -16,7 +17,7 @@ public class Car implements car.ICarPart {
     public void accept(ICarVisitor carVisitor) {
         carVisitor.visit(this);
 
-        for(car.ICarPart e: carElement){
+        for(ICarParts e: carElement){
             e.accept(carVisitor);
         }
     }

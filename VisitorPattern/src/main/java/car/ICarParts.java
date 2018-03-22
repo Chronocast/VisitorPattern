@@ -2,7 +2,8 @@ package car;
 
 import visitor.ICarVisitor;
 
-public interface ICar
+// Defines the elements in the structure
+public interface ICarParts
 {
     public void accept(ICarVisitor carVisitor);
 }

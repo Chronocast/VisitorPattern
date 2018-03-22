@@ -2,6 +2,7 @@ package visitor;
 
 import car.*;
 
+// Defines the logics
 public interface ICarVisitor
 {
     public void visit(SteeringWheel steeringWheel);

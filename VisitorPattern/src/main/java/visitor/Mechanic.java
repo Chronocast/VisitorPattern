@@ -7,6 +7,11 @@ public class Mechanic implements ICarVisitor
    private String name = "MECHANIC";
 
     @Override
+    public void visit(Car car) {
+        System.out.println(name + " inspect the car");
+    }
+
+    @Override
     public void visit(SteeringWheel steeringWheel) {
         System.out.println(name + " adds steering fluid");
     }
@@ -26,8 +31,4 @@ public class Mechanic implements ICarVisitor
         System.out.println(name + " checks the engine oil");
     }
 
-    @Override
-    public void visit(Car car) {
-        System.out.println(name + " inspect the car");
-    }
 }

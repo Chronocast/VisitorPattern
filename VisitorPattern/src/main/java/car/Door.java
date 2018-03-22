@@ -2,7 +2,8 @@ package car;
 
 import visitor.ICarVisitor;
 
-public class Door implements car.ICarPart {
+public class Door implements ICarParts
+{
 
     @Override
     public void accept(ICarVisitor carVisitor) {

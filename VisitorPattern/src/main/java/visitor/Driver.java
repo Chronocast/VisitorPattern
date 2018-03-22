@@ -7,6 +7,11 @@ public class Driver implements ICarVisitor
     private String name = "DRIVER";
 
     @Override
+    public void visit(Car car) {
+        System.out.println(name + " comes to the car");
+    }
+
+    @Override
     public void visit(SteeringWheel steeringWheel)
     {
         System.out.println(name + " honks the horn ");
@@ -27,8 +32,4 @@ public class Driver implements ICarVisitor
         System.out.println(name + " starts the engine");
     }
 
-    @Override
-    public void visit(Car car) {
-        System.out.println(name + " comes to the car");
-    }
 }
