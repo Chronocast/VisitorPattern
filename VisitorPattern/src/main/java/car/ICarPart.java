@@ -1,8 +1,8 @@
 package car;
 
-import visitor.CarVisitor;
+import visitor.ICarVisitor;
 
 public interface ICarPart
 {
-    public void accept(CarVisitor carVisitor);
+    public void accept(ICarVisitor carVisitor);
 }

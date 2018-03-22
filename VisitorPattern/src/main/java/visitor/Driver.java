@@ -2,7 +2,7 @@ package visitor;
 
 import car.*;
 
-public class Driver implements CarVisitor
+public class Driver implements ICarVisitor
 {
     private String name = "DRIVER";
 

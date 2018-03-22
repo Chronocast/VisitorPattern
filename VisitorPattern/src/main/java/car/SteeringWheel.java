@@ -1,14 +1,12 @@
 package car;
 
-import visitor.CarVisitor;
+import visitor.ICarVisitor;
 
-public class SteeringWheel implements car.ICarPart
-{
+public class SteeringWheel implements car.ICarPart {
 
     @Override
-    public void accept(CarVisitor carVisitor)
+    public void accept(ICarVisitor carVisitor)
     {
         carVisitor.visit(this);
-
     }
 }

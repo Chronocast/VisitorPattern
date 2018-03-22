@@ -2,7 +2,8 @@ package visitor;
 
 import car.*;
 
-public class Mechanic implements CarVisitor {
+public class Mechanic implements ICarVisitor
+{
    private String name = "MECHANIC";
 
     @Override
