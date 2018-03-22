@@ -2,7 +2,7 @@ package car;
 
 import visitor.ICarVisitor;
 
-public interface ICarPart
+public interface ICar
 {
     public void accept(ICarVisitor carVisitor);
 }

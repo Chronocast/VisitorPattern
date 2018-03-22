@@ -1,18 +1,15 @@
 package launcher;
 
 import car.Car;
-import car.ICarPart;
+import car.ICar;
 import visitor.Driver;
-import visitor.Mechanic;
 
 public class test
 {
     public static void main(String[] args)
     {
-        ICarPart car = new Car();
+        ICar car = new Car();
 
         car.accept(new Driver());
-        System.out.println("\n");
-        car.accept(new Mechanic());
     }
 }
